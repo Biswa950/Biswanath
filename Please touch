@@ -1,0 +1,73 @@
+Need help in HTML, CSS & JavaScript ?
+
+DM me😊
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <style>
+
+      img {
+
+        filter: saturate(0%);
+
+      }
+
+    </style>
+
+</head>
+
+<body>
+
+<center>
+
+<img src="" style="width:350px; height:auto;">
+
+</center>
+
+<script>
+
+  var onLight = window.atob('Cmh0dHBzOi8vZW5jcnlwdGVkLXRibjAuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1RtSUFmNXowbktVN21BOFJ5OERybV9XeGlRcXdXaThaZzlTZyZ1c3FwPUNBVQ==');
+
+  var img = document.querySelector('img');
+
+  img.src = onLight;
+
+ var btn = document.querySelector("button");
+
+ var cond = true;
+
+ const switchLed = () => {
+
+   if(cond == true) {
+
+     cond = false;
+
+     img.style.filter = 'saturate(1000%)';
+
+   } else {
+
+     cond = true;
+
+     img.style.filter = 'saturate(0)';
+
+   }
+
+ }
+
+ img.addEventListener('click', switchLed);
+
+</script>
+
+</body>
+
+</html>
